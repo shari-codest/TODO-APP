@@ -22,15 +22,17 @@ function AddTodo() {
         // todos.push(todo);
         // Set all todos in local storage
         setTodos([...todos,todo]);
+        setTodo("");
         // localStorage.setItem("TODO_KEY",JSON.stringify(todos));
     }
     return (
     <section className={styles.addTodo}>
         <input
+        value={todo}
         onChange={collectInput}
         className={styles.addTodoInput}
         placeholder="Start typing..." />
-        <button className="btn btn-primary" onclick ={saveTodo}>Create New</button>
+        <button className={`btn ${styles.btn}`} onClick={saveTodo}>Create New</button>
     </section>
     );
 }
