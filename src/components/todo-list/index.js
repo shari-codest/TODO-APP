@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react'
+// import {useState,useEffect} from 'react'
 import {useLocalStorage} from "usehooks-ts";
 
 function TodoList() {
@@ -27,8 +27,8 @@ function TodoList() {
 
     return (
         <ul>
-        {todos.map(function(todo, index){
-            return<li key={index}>{todo}</li>
+        {todos.map(function(todo, index) {
+            return <li key={index}>{todo}</li>
     })}
             </ul>
             );

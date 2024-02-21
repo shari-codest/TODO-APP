@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import styles from "./index.module.css"
 import { useLocalStorage } from "usehooks-ts";
 
@@ -30,7 +30,7 @@ function AddTodo() {
         onChange={collectInput}
         className={styles.addTodoInput}
         placeholder="Start typing..." />
-        <button onclick ={saveTodo}>Create New</button>
+        <button className="btn btn-primary" onclick ={saveTodo}>Create New</button>
     </section>
     );
 }
